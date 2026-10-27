@@ -1,60 +1,43 @@
-# Rojin Antony — Portfolio Website
+# Rojin Antony — Terminal Portfolio
 
-A responsive, light-themed portfolio website for a Linux/server infrastructure engineer moving toward cloud and DevOps roles. Built with plain HTML, CSS, and JavaScript; no build tools or paid hosting are required.
+Responsive terminal-inspired portfolio built with static HTML, CSS, and JavaScript.
 
 ## Files
+- `index.html` — portfolio content
+- `styles.css` — terminal-inspired responsive theme
+- `script.js` — mobile navigation and current year
+- `profile.jpg` — optional profile photo (add your own)
 
-- `index.html` — page content and metadata
-- `styles.css` — responsive styling and visual design
-- `script.js` — mobile navigation and current footer year
+## Add your profile photo
+1. Choose a professional photo you are comfortable making public.
+2. Rename it to `profile.jpg`.
+3. Upload it to the same repository root as `index.html`.
+4. Commit the change. If no photo is present, the website displays the initials `RA`.
 
 ## Before publishing
+- Confirm the email address in the contact section is correct.
+- Replace the generic LinkedIn link with your personal LinkedIn profile URL.
+- Review project descriptions and only include claims you can explain in an interview.
+- Link each project to a real public repository or sanitized case study when available.
+- Never publish client data, credentials, private IPs, server hostnames, or confidential diagrams.
 
-1. Open `index.html`.
-2. Replace `YOUR_EMAIL@example.com` with your professional email address.
-3. Add your LinkedIn URL if you want one (there is currently no LinkedIn link).
-4. Review the project and experience descriptions. Keep only statements you can comfortably discuss in an interview.
-5. Add links to real public repositories, diagrams, or sanitized case studies as you publish them.
-
-## Publish with GitHub Pages
-
-### Option A: Upload using the GitHub website
+## Publish at https://rojinantony.github.io
 
 1. Sign in to GitHub as `rojinantony`.
-2. Open <https://github.com/new>.
-3. Create a **public** repository named exactly `rojinantony.github.io`.
-4. Keep it simple: you can skip adding a README, `.gitignore`, or license because this package already contains a README.
-5. Open the new repository and choose **Add file → Upload files**.
-6. Upload `index.html`, `styles.css`, `script.js`, and `README.md` from this folder. Upload the files themselves, not the parent folder.
-7. Commit the files to the `main` branch.
-8. Open **Settings → Pages**.
-9. Under **Build and deployment**, select **Deploy from a branch**.
-10. Select branch **main** and folder **/(root)**, then click **Save**.
-11. Wait a few minutes, then open <https://rojinantony.github.io>.
+2. Create a **public** repository named exactly `rojinantony.github.io` at <https://github.com/new>.
+3. Upload `index.html`, `styles.css`, `script.js`, and `README.md` directly into the repository root. Upload `profile.jpg` too if ready.
+4. Commit the files to the `main` branch.
+5. Open **Settings → Pages**.
+6. Under **Build and deployment**, choose **Deploy from a branch**.
+7. Select branch `main` and folder `/(root)`, then click **Save**.
+8. Wait a few minutes. Check the repository's **Actions** tab if the site does not publish.
+9. Open <https://rojinantony.github.io>.
 
-### Option B: Upload with Git
+### If you already have a repository named `github.io`
+Open **Settings → General → Repository name**, rename it to `rojinantony.github.io`, and confirm. Then verify **Settings → Pages** uses `main` and `/(root)`.
 
-From a terminal in this folder, run:
+## Update the site
+Edit files in GitHub or locally, then commit to `main`. GitHub Pages republishes automatically.
 
-```bash
-git init
-git add index.html styles.css script.js README.md
-git commit -m "Create portfolio website"
-git branch -M main
-git remote add origin https://github.com/rojinantony/rojinantony.github.io.git
-git push -u origin main
-```
-
-If Git asks you to authenticate, use GitHub's browser authentication or a supported personal access token; your normal account password is not accepted for Git HTTPS pushes. If the repository already exists or already has content, inspect it before running these commands and do not overwrite work you need.
-
-Then enable GitHub Pages at **Settings → Pages** as described above.
-
-## Updating the site later
-
-Edit the files locally or choose a file in GitHub and click the pencil icon. Commit the change to `main`; GitHub Pages will publish the update automatically.
-
-## Important notes
-
-- GitHub Pages gives this project a free `github.io` address; you do not need to purchase a domain.
-- This is a static website. It does not include a server-side contact form or store messages. The email link opens the visitor's email app.
-- Keep secrets, customer information, private IP addresses, server hostnames, credentials, and confidential infrastructure diagrams out of public repositories.
+## Notes
+GitHub Pages hosts static files for free. This site has no server-side contact form; the email link opens the visitor's email app.

@@ -3,8 +3,8 @@ const navLinks = document.querySelector(".nav-links");
 
 if (menuToggle && navLinks) {
   menuToggle.addEventListener("click", () => {
-    const isOpen = navLinks.classList.toggle("open");
-    menuToggle.setAttribute("aria-expanded", String(isOpen));
+    const open = navLinks.classList.toggle("open");
+    menuToggle.setAttribute("aria-expanded", String(open));
   });
 
   navLinks.querySelectorAll("a").forEach((link) => {
